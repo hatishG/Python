@@ -55,7 +55,6 @@ s3_resource.meta.client.upload_file(Filename=first_file_name, Bucket=first_bucke
 #downloading the file
 s3_resource.Object(first_bucket_name, first_file_name).download_file(f'/tmp/{first_file_name}')
 
-
 #method to copy object between buckets
 def copy_to_bucket(bucket_from_name, bucket_to_name, file_name):
     copy_source = {
